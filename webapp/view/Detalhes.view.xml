@@ -61,7 +61,7 @@
 					<m:ObjectStatus id="_IDGenObjectStatus1" text="{ path:'Status', formatter: '.productStatus'}" state="{ path:'Status', formatter: '.changeStatus'}" icon="{ path:'Status', formatter: '.changeIcon'}" class="sapMObjectStatusLarge"/>
 				</m:VBox>
 
-				<m:VBox id="_IDGenVBox5" class="sapUiSmallMarginEnd sapUiSmallMarginBotton">
+				<m:VBox id="_IDGenVBox5">
 				<m:Title id="_IDGenTitle6" text="{i18n>headerPrice}" class="sapUiTinyMarginBotton"/>
 					<m:ObjectNumber id="_IDGenObjectNumber1" unit="{Currencycode}" number="{ parts:[{path:'Price'}, {path:'Currencycode'}], type:'sap.ui.model.type.Currency', formatOptions: {showMeasure: false}}" state="Information" class="sapMObjectNumberLarge"/>
 				</m:VBox>

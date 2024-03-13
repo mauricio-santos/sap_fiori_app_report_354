@@ -82,7 +82,7 @@ sap.ui.define(
 
               var oDateFormat = sap.ui.core.format.DateFormat.getDateTimeInstance({
                   style: "short",
-                  pattern: (oLocale === "pt-BR") ? "dd/MM/yyyy HH:mm" : "dd.MM.yyyy HH:mm"
+                  pattern: (oLocale === "pt-BR") ? "dd/MM/yyyy" : "dd.MM.yyyy"
               });
 
               return oDateFormat.format(new Date(value));
