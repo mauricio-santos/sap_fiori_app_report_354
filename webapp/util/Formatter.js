@@ -91,22 +91,7 @@ sap.ui.define(
           });
   
           return numFloat.format(value);
-        },
-
-        //Formatação de valores decimais
-        floatNumber: function(value){
-        var numFloat = NumberFormat.getFloatInstance({
-          maxFractionDigits: 2,
-          minFractionDigits: 2,
-          groupingEnabled: true,
-          groupingSeparator: ".",
-          decimalSeparator: ","
-        });
-
-        return numFloat.format(value);
-      }
-        
-
+        },        
     };
 
     return Formatter;
