@@ -75,7 +75,7 @@
                                 </header>
                             </Column>    
 
-                            <Column id="supplierIdHeader" width="8em">
+                            <Column id="supplierIdHeader" width="6em">
                                 <header>
                                     <Text id="text4" text="{i18n>tbSupplyId}"/>
                                 </header>
@@ -120,10 +120,10 @@
 
                                     <ObjectNumber xmlns="sap.m" unit="{Currencycode}" id="number0" number="{ parts:[{path:'Price'}, {path:'Currencycode'}], type:'sap.ui.model.type.Currency', formatOptions: {showMeasure: false}}" state="Information"/>
 
-                                    <ObjectStatus xmlns="sap.m" text="{ path:'Status', formatter: '.productStatus'}" id="statusProd" state="{ path:'Status', formatter: '.changeStatus'}" icon="{ path:'Status', formatter: '.changeIcon'}"/>
+                                    <ObjectStatus xmlns="sap.m" text="{ path:'Status', formatter: '.objFormatter.productStatus'}" id="statusProd" state="{ path:'Status', formatter: '.objFormatter.changeStatus'}" icon="{ path:'Status', formatter: '.objFormatter.changeIcon'}"/>
 
                                     <!-- <Text xmlns="sap.m" text="{ parts: [ {path: 'Createdat'} ], formatter: '.dateFormat'}" id="text24" /> -->
-                                    <Text xmlns="sap.m" text="{ path:'Createdat', formatter: '.dateFormat'}" id="text23"/>
+                                    <Text xmlns="sap.m" text="{ path:'Createdat', formatter: '.objFormatter.dateFormat'}" id="text23"/>
                                 </cells>
                             </ColumnListItem>
                         </items>

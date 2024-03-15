@@ -58,7 +58,7 @@
 
 				<m:VBox id="_IDGenVBox4" class="sapUiSmallMarginEnd sapUiSmallMarginBotton">
 					<m:Title id="_IDGenTitle5" text="{i18n>headerStatus}" class="sapUiTinyMarginBotton"/>
-					<m:ObjectStatus id="_IDGenObjectStatus1" text="{ path:'Status', formatter: '.productStatus'}" state="{ path:'Status', formatter: '.changeStatus'}" icon="{ path:'Status', formatter: '.changeIcon'}" class="sapMObjectStatusLarge"/>
+					<m:ObjectStatus id="_IDGenObjectStatus1" text="{ path:'Status', formatter: '.objFormatter.productStatus'}" state="{ path:'Status', formatter: '.objFormatter.changeStatus'}" icon="{ path:'Status', formatter: '.objFormatter.changeIcon'}" class="sapMObjectStatusLarge"/>
 				</m:VBox>
 
 				<m:VBox id="_IDGenVBox5">
@@ -75,7 +75,7 @@
 
 					<m:HBox id="_IDGenHBox5">
 						<m:Label id="_IDGenLabel6" text="{i18n>headerCreatedOn}" class="sapUiSmallMarginEnd"/>
-						<m:Link id="_IDGenLink7" text="{ path:'Createdat', formatter: '.dateFormat'}"/>
+						<m:Link id="_IDGenLink7" text="{ path:'Createdat', formatter: '.objFormatter.dateFormat'}"/>
 					</m:HBox>
 
 					<m:HBox id="_IDGenHBox6">
@@ -85,7 +85,7 @@
 
 					<m:HBox id="_IDGenHBox7">
 						<m:Label id="_IDGenLabel8" text="{i18n>headerChangedOn}" class="sapUiSmallMarginEnd"/>
-						<m:Link id="_IDGenLink9" text="{ path:'Changedat', formatter: '.dateFormat'}"/>
+						<m:Link id="_IDGenLink9" text="{ path:'Changedat', formatter: '.objFormatter.dateFormat'}"/>
 					</m:HBox>
 					
 				</m:VBox>
@@ -122,16 +122,16 @@
 									<m:Text id="_IDGenText6" text="{Measureunit}" class="sapMObjectNumberMedium"/>
 
 									<m:Label id="_IDGenLabel12" text="{i18n>sfWeightmeasure}"/>
-									<m:Text id="_IDGenText7" text="{ path:'Weightmeasure', formatter: '.floatNumber'} {Weightunit}" class="sapMObjectNumberMedium"/>
+									<m:Text id="_IDGenText7" text="{ path:'Weightmeasure', formatter: '.objFormatter.floatNumber'} {Weightunit}" class="sapMObjectNumberMedium"/>
 
 									<m:Label id="_IDGenLabel13" text="{i18n>sfWidth}"/>
-									<m:Text id="_IDGenText8" text="{ path:'Width', formatter: '.floatNumber'} {Dimunit}" class="sapMObjectNumberMedium"/>
+									<m:Text id="_IDGenText8" text="{ path:'Width', formatter: '.objFormatter.floatNumber'} {Dimunit}" class="sapMObjectNumberMedium"/>
 
 									<m:Label id="_IDGenLabel14" text="{i18n>sfDepth}"/>
-									<m:Text id="_IDGenText9" text="{ path:'Depth', formatter: '.floatNumber'} {Dimunit}" class="sapMObjectNumberMedium"/>
+									<m:Text id="_IDGenText9" text="{ path:'Depth', formatter: '.objFormatter.floatNumber'} {Dimunit}" class="sapMObjectNumberMedium"/>
 
 									<m:Label id="_IDGenLabel15" text="{i18n>sfHeight}"/>
-									<m:Text id="_IDGenText10" text="{ path:'Height', formatter: '.floatNumber'} {Dimunit}" class="sapMObjectNumberMedium"/>
+									<m:Text id="_IDGenText10" text="{ path:'Height', formatter: '.objFormatter.floatNumber'} {Dimunit}" class="sapMObjectNumberMedium"/>
 
 								</form:content>
 							</form:SimpleForm>
