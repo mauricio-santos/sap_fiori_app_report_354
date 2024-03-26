@@ -62,13 +62,5 @@
             "uri": "/Categories('esporte')",
             "type": "cds_zsd_production_354.CategoriesType"
         }
-    },
-    {
-        "Category": "Ca 9",
-        "Description": "Description 9",
-        "__metadata": {
-            "uri": "/Categories('Ca%209')",
-            "type": "cds_zsd_production_354.CategoriesType"
-        }
     }
 ]

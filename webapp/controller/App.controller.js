@@ -1,28 +1,13 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller",
-	"sap/ui/core/routing/History",
-	"sap/ui/core/UIComponent"
-], function(Controller, History, UIComponent) {
+], function(Controller) {
 	"use strict";
 
-	return Controller.extend("sap.ui.demo.nav.controller.NotFound", {
+	return Controller.extend("sap.ui.demo.nav.controller.App", {
 
-		getRouter : function () {
-			return UIComponent.getRouterFor(this);
+		onInit : function () {
+			
 		},
-
-		onNavBack: function () {
-			var oHistory, sPreviousHash;
-
-			oHistory = History.getInstance();
-			sPreviousHash = oHistory.getPreviousHash();
-
-			if (sPreviousHash !== undefined) {
-				window.history.go(-1);
-			} else {
-				this.getRouter().navTo("appHome", {}, true /*no history*/);
-			}
-		}
 
 	});
 
